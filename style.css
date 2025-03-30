@@ -1,0 +1,53 @@
+/* General styles */
+body {
+     background-image: url('background2.jpg'); /* Set background image */
+    color: black; /* Set font color */
+    font-family: Verdana;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centering image 
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}*/
+
+
+h1 {
+    background-color: white;
+    color:green;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    background-color: white;
+    color:green;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Paragraph and preformatted text styles */
+p, pre {
+    text-align: left;
+    font-size: 15px;
+}
+
+
+
+a:hover {
+    color: white;
+    background-color: green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Icons styling */
+a img {
+    vertical-align: left;
+  
+}
