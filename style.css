@@ -1,53 +1,92 @@
-/* General styles */
 body {
-     background-image: url('background2.jpg'); /* Set background image */
-    color: black; /* Set font color */
-    font-family: Verdana;
-    margin: 0;
-    padding: 20px;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #fffbe6);
+  color: #333;
 }
 
-/* Centering image 
-img {
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}*/
-
-
-h1 {
-    background-color: white;
-    color:green;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-h2 {
-    background-color: white;
-    color:green;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-/* Paragraph and preformatted text styles */
-p, pre {
-    text-align: left;
-    font-size: 15px;
+.main-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #00264d;
 }
 
-
-
-a:hover {
-    color: white;
-    background-color: green;
-    padding: 5px;
-    border-radius: 5px;
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem 3rem;
 }
 
-/* Icons styling */
-a img {
-    vertical-align: left;
-  
+.bio-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  max-width: 250px;
+  transition: transform 0.3s;
+}
+
+.bio-card:hover {
+  transform: translateY(-5px);
+}
+
+.bio-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #004080;
+}
+
+.bio-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+.bio-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.bio-link:hover {
+  background-color: #0059b3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+@media (max-width: 600px) {
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
