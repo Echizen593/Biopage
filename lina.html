@@ -6,53 +6,125 @@
 <meta name="author" content="Lina Soterio">
 <title>My Simple HTML Bio Page</title>
 <style>
-body {font-family: verdana}
-h2 {color: MediumSeaGreen;}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color:none;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: lightpink;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: indianred;
+  color: black;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+body { background-image:url("pink watercolor2.png");font-family:Bookman Old Style}
+h2 {color: indianred;}
 pre {font-family: verdana;}
+
 </style>
-</head>
- 
+</head> 
  <body>
- <img src="MyPhoto.png" alt="My Photo" width="225" height="200">
- <h1 style="background-color:MediumSeaGreen;text-align:left;">LINA A. SOTERIO</h1>
+
+<div class="header">
+<h1>
+ <img src="Myphoto.png" alt="My Photo" width="225" height="200">
+ <h1 style="background-color:Lightpink;text-align:left;color:indianred;">LINA A. SOTERIO</h1>
  <pre style="text-align:left;">
  Address:Block 3, Lot 3, Cabuyao Major Homes Subd., Bigaa, City of Cabuyao, Laguna
  Cellphone: 09295097090
- Email:andallina24@gmail.com
- </pre>
- <hr>
+ Email:andallina24@gmail.com 
+ </pre></div>
+
+<div class="topnav">
+  <a href="https://www.linkedin.com/in/lina-soterio-111a59337/">My LinkedIn account</a>
+  <a href="https://web.facebook.com/apphle.andal/">My Facebook account</a>
+  <a href="https://www.instagram.com/yourprofile">My Instagram account</a>
+</div>
+
+<div class="row">
+  <div class="column">
  <h2>SUMMARY</h2>
- <p> I am a dedicated public school teacher with over 13 years of experience, currently teaching Senior High School under the Technical-Vocational-Livelihood (TVL) track, specializing in Home Economics – Cookery. I strive to equip my students with practical culinary skills and a deep understanding of food preparation, helping them become job-ready and confident in their chosen field.</p>
+ <p> I have been serving as a dedicated public school teacher for over 13 years, with a strong commitment to nurturing students’ growth and potential. Currently, I teach in the Senior High School level under the Technical-Vocational-Livelihood (TVL) track. My role involves more than just delivering lessons—I aim to provide students with hands-on, practical culinary training that prepares them for real-world kitchen environments. Through immersive learning experiences, I help them master essential food preparation techniques, kitchen safety, and sanitation standards.</p>
+ <p>Above all, my goal is to empower students to become confident and competent individuals who are ready to pursue employment or entrepreneurship in the culinary field. I take pride in shaping not only their technical skills but also their discipline, work ethic, and passion for the craft.</p></div>
  
+ <div class="column">
  <h2>PROFESSIONAL EXPERIENCE</h2>
- <pre><b>2011 to present Bigaa Integrated National High School Teacher II</b>
-Help my students gain practical, hands-on experience that prepares them for real-life opportunities
+<dl>
+  <dt>2011 to present Bigaa Integrated National High School Teacher II</dt>
+ <dd>-Help my students gain practical, hands-on experience that prepares them for real-life opportunities</dd>
+ <dt>2009 to 2011 Sampiro National High School LSB Teacher</dt>
+ <dd>-Taught TLE and Filipino to high school students</dd> </div>
  
-<b>2009 to 2011 Sampiro National High School LSB Teacher</b>
-Taught TLE and Filipino to high school students</pre>
- 
+ <div class="column">
  <h2>EDUCATION</h2>
-<pre>2002 to 2006 Bachelor of Science in Industrial Education Batangas State University 
-1996 to 2002 Bulihan Nationl High School</pre>
+<li>2002 to 2006 Bachelor of Science in Industrial Education Batangas State University</li> 
+<li>1996 to 2002 Bulihan Nationl High School</li></div>
  
+ <div class="column">
  <h2>CERTIFICATIONS and AWARDS</h2>
- <pre>Cookery NC II
-Commercial Cooking NC IV</pre>
+ <li>Cookery NC II</li>
+ <li>Commercial Cooking NC IV</li>
+</div>
  
-<h2>SOCIALS</h2>
-<a href="https://www.linkedin.com/in/lina-soterio-111a59337/">My LinkedIn account</a> <br>
-<a href="https://web.facebook.com/apphle.andal/">My Facebook account</a> <br>
-<a href="https://www.instagram.com/yourprofile">My Instagram account</a>
- 
+ <div class="column">
 <h2>INTERESTS</h2>
-<pre>Cooking 
-Handicraft Making
-Traveling</pre>
+<li>Cooking</li>
+<li>Handicraft Making</li>
+<li>Traveling</li></div>
  
+ <div class="column">
 <h2>REFERENCES</h2>
-<pre>Rosalie L. Maigting
-Mylene D. Solabo
-Abigail Joyce M. Lingon</pre>
- 
+ <ol>
+ <li>Rosalie L. Maigting - Public School Teacher</li>
+ <li>Mylene D. Solabo - Public School Teacher</li>
+ <li>Abigail Joyce M. Lingon - Public School Teacher</li>
+ </ol> </div> 
 </body>
 </html>
