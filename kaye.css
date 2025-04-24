@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('background.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #333;
+  color: #ffb2b3;
 }
 
 .bio-container {
