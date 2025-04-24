@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('background.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('violet.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
 }
